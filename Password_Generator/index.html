@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pass</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
 </head>
 <body>
-    
+    <main>
+        <div class="rsult-container">
+            <textarea id="pword_area"></textarea>
+        </div>
+
+        <section class="setting">
+            <div class="setting_content">
+                <label>Password length
+                    <input id="pword_len" type="number" min="8" max="16" value="8">
+                </label>
+            </div>
+            <div class="setting_content">
+                <label>Include Lowercase letter
+                    <input id="psword_lower" type="checkbox">
+                </label>
+            </div>
+            <div class="setting_content">
+                <label>Include Uppercase Letter
+                    <input id="pword_upper" type="checkbox">
+                </label>
+            </div>
+            <div class="setting_content">
+                <label>Include Number
+                    <input id="pword_no" type="checkbox">
+                </label>
+            </div>
+            <div class="setting_content">
+                <label>Include Symbol
+                    <input id="pword_symbol" type="checkbox">
+                </label>
+            </div>
+        </section>
+
+        <div class="buttons">
+            <button class="btn btn-large" id="generatorbtn">
+                <i class="fas fa-key"></i>Generate
+            </button>
+            <button class="btn btn-large" id="copybtn">
+                <i class="far fa-copy"></i>
+                Copy
+            </button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
